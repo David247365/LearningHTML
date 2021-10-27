@@ -177,15 +177,30 @@
         label: associates corresponding text to the input. Great for assistive
         technology.
       </li>
+      <li>button: represents a clickable button.</li>
+      <li>
+        The name attribute in a form is used as a reference when the data is
+        submitted.
+      </li>
     </ul>
     <form action="/tacos">
       <p>
         <label for="username">Enter a Username:</label>
-        <input id="username" type="text" placeholder="username" />
+        <input
+          id="username"
+          type="text"
+          placeholder="username"
+          name="username"
+        />
       </p>
       <p>
         <label for="password">Enter a Password:</label>
-        <input id="password" type="password" placeholder="password" />
+        <input
+          id="password"
+          type="password"
+          placeholder="password"
+          name="password"
+        />
       </p>
       <p>
         <label for="color">Pick a Color:</label>
@@ -195,6 +210,7 @@
         <label for="number">Choose a Number:</label>
         <input id="number" type="number" placeholder="enter a number" />
       </p>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
