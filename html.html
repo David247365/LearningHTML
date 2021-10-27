@@ -168,6 +168,33 @@
       form, a HTTP request will be made. The method attribute specifies which
       HTTP method should be used.
     </p>
-    <form action="/tacos"></form>
+    <ul>
+      <li>
+        input: The input element is used to create a variety of different form
+        controls.
+      </li>
+      <li>
+        label: associates corresponding text to the input. Great for assistive
+        technology.
+      </li>
+    </ul>
+    <form action="/tacos">
+      <p>
+        <label for="username">Enter a Username:</label>
+        <input id="username" type="text" placeholder="username" />
+      </p>
+      <p>
+        <label for="password">Enter a Password:</label>
+        <input id="password" type="password" placeholder="password" />
+      </p>
+      <p>
+        <label for="color">Pick a Color:</label>
+        <input id="color" type="color" />
+      </p>
+      <p>
+        <label for="number">Choose a Number:</label>
+        <input id="number" type="number" placeholder="enter a number" />
+      </p>
+    </form>
   </body>
 </html>
