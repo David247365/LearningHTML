@@ -182,6 +182,7 @@
         The name attribute in a form is used as a reference when the data is
         submitted.
       </li>
+      <li>checkbox, radio(value), select</li>
     </ul>
     <form action="/tacos">
       <p>
@@ -211,6 +212,28 @@
         <input id="number" type="number" placeholder="enter a number" />
       </p>
       <button type="submit">Submit</button>
+    </form>
+    <h3>More Inputs</h3>
+    <form action="/birds">
+      <input type="checkbox" name="agree_tos" id="agree" />
+      <label for="agree">I Agree</label>
+      <p>
+        <label for="xs">XS:</label>
+        <input type="radio" name="size" id="xs" value="xs" />
+        <label for="s">S:</label>
+        <input type="radio" name="size" id="s" value="s" />
+        <label for="m">M:</label>
+        <input type="radio" name="size" id="m" value="m" />
+      </p>
+      <p>
+        <label for="meal">Select an Entree</label>
+        <select name="meal" id="meal">
+          <option value="fish">Fish</option>
+          <option value="veg">Vegetarian</option>
+          <option value="steak">Steak</option>
+        </select>
+      </p>
+      <button>Submit</button>
     </form>
   </body>
 </html>
