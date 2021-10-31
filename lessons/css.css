@@ -18,3 +18,14 @@ a {
 .hex {
   color: #816df1;
 }
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: salmon;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-left: 10px;
+  text-align: center;
+  margin: 20px;
+}
