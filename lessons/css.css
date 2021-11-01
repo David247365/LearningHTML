@@ -29,3 +29,13 @@ div {
   text-align: center;
   margin: 20px;
 }
+
+.alpha {
+  width: 50%;
+  height: 50%;
+}
+
+.alpha p {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
