@@ -18,8 +18,26 @@ li {
   padding: 0;
 }
 
-@media (width: 800px) {
+/* @media (max-width: 800px) {
   h1 {
     color: violet;
+  }
+} */
+
+@media (max-width: 1500px) {
+  h1 {
+    color: teal;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    color: orange;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    color: red;
   }
 }
