@@ -19,12 +19,52 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+#title {
+  font-weight: normal;
+  margin: 35px 0 12px 0;
+}
+
+#description {
+  margin-bottom: 30px;
+  font-style: italic;
+  font-weight: normal;
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+
 form {
   display: flex;
   flex-direction: column;
   background-color: rgba(50, 70, 11, 0.7);
   padding: 2.25rem;
   border-radius: 0.25rem;
+  width: 50%;
+}
+
+label {
+  margin: 20px 0 10px 0;
+}
+
+label:nth-of-type(1) {
+  margin-top: 0;
+}
+
+input,
+select {
+  padding: 8px;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  min-height: 1.1rem;
+  min-width: 1.1rem;
+}
+
+label[for="dropdown"],
+label[for="feature"] {
+  font-size: 1.15rem;
 }
 
 .checkboxes {
@@ -35,7 +75,26 @@ form {
   margin: 20px 0;
 }
 
-.checkboxes p {
+.radio {
+  display: flex;
+  justify-items: center;
+}
+
+.radio label {
+  margin-bottom: 0.5rem;
+  padding-left: 10px;
+}
+
+.radios {
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.checkboxes p,
+.radios p {
   margin-bottom: 6px;
 }
 
@@ -44,14 +103,42 @@ form {
 }
 
 .checkboxes label {
+  display: flex;
   margin: 3.5px 0;
   padding-left: 2px;
+  align-items: center;
 }
 
 .checkboxes label input {
   margin-right: 5px;
 }
 
+p {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
 textarea {
   resize: vertical;
+  padding: 0.625rem;
+  font-size: inherit;
+  margin-bottom: 25px;
+}
+
+#submit {
+  background-color: #37af65;
+  padding: 0.75rem;
+  border-radius: 2px;
+  color: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
