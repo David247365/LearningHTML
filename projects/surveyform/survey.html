@@ -7,5 +7,62 @@
     <title>Survey Form</title>
     <link rel="stylesheet" href="app.css" />
   </head>
-  <body></body>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter your name"
+        required
+      />
+      <label for="email" id="email-label">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
+      <label for="number" id="number-label">Age</label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="100"
+        placeholder="Age"
+      />
+      <label for="dropdown">
+        Which option best describes your current role?
+      </label>
+      <select name="role" id="dropdown">
+        <option value="" disable selected>Select Current Role</option>
+        <option value="student">Student</option>
+        <option value="ft">Full Time Job</option>
+        <option value="ftl">Full Time Learner</option>
+        <option value="pnts">Prefer Not To Say</option>
+        <option value="other">Other</option>
+      </select>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <div class="radio">
+        <input type="radio" name="recommend" id="definitely" />
+        <label for="definitely">Definitely</label>
+      </div>
+      <div class="radio">
+        <input type="radio" name="recommend" id="maybe" />
+        <label for="maybe">Maybe</label>
+      </div>
+      <div class="radio">
+        <input type="radio" name="recommend" id="notSure" />
+        <label for="notSure">Not Sure</label>
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
 </html>
