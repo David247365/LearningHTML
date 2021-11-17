@@ -6,6 +6,7 @@
 
 body {
   background-color: #eee;
+  font-family: "Lato", sans-serif;
 }
 
 #header {
@@ -57,6 +58,22 @@ a {
 #hero form {
   display: flex;
   flex-direction: column;
+  padding: 20px;
+}
+
+#email {
+  margin-bottom: 20px;
+  padding: 5px 60px;
+}
+
+#submit {
+  background-color: #f1c40f;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  width: 70%;
+  align-self: center;
 }
 
 #how-it-works {
